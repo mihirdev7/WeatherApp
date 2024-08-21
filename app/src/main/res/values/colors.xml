@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#4AB5EF</color> <!-- Sky Blue -->
+    <color name="colorPrimaryDark">#0277BD</color> <!-- Deep Sky Blue -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White for text on primary -->
+    <color name="colorSecondary">#FF9800</color> <!-- Sunny Orange -->
+    <color name="colorOnSecondary">#000000</color> <!-- White for text on secondary -->
+    <color name="colorBackground">#E1F5FE</color> <!-- Light Sky Blue for background -->
+    <color name="colorPrimaryText">#212121</color> <!-- Dark text for readability -->
+
+    <!-- Dark Mode Colors -->
+    <color name="colorPrimary1">#2A3E59</color> <!-- Midnight Blue -->
+    <color name="colorPrimaryDark1">#274568</color> <!-- Darker Midnight Blue -->
+    <color name="colorOnPrimary1">#DCE3F0</color> <!-- Soft Light Blue for text on primary -->
+    <color name="colorSecondary1">#FF7F50</color> <!-- Coral -->
+    <color name="colorOnSecondary1">#DBDBDB</color> <!-- Light text for readability -->
+    <color name="colorBackground1">#0B0E12</color> <!-- Deep Black-Blue background -->
+    <color name="colorPrimaryText1">#B0C7D4</color> <!-- Muted Light Blue for text -->
+</resources>

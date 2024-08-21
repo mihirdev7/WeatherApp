@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarId"
+        android:layout_width="match_parent"
+        app:title="Home"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_round_shape"
+        android:clickable="true"
+        android:defaultFocusHighlightEnabled="true"
+        android:focusable="true"
+        android:inputType="text"
+        android:queryHint="Search City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarId" />
+
+    <TextView
+        android:id="@+id/cityTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:tooltipText="Ahmedabad"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/typeTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:tooltipText="Heavy Rain"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityTextId" />
+
+    <TextView
+        android:id="@+id/wDataTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="87"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeTextId" />
+
+    <TextView
+        android:id="@+id/feelsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Feels Like"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wDataTextId" />
+
+    <TextView
+        android:id="@+id/feelsTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:tooltipText="86"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/feelsText"
+        app:layout_constraintStart_toEndOf="@id/feelsText"
+        app:layout_constraintTop_toTopOf="@+id/feelsText" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelsText">
+
+        <TextView
+            android:id="@+id/highText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/highTextID"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/lowTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="86"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lowText"
+        />
+
+        <TextView
+            android:id="@+id/lowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Low "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/lowTextID"
+            app:layout_constraintStart_toEndOf="@+id/highTextID" />
+
+        <TextView
+            android:id="@+id/highTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="86"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/lowText"
+            app:layout_constraintStart_toEndOf="@+id/highText" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+        <TextView
+            android:id="@+id/pressureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/pressureTextID"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/pressureTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="86"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/humidityText" />
+
+        <TextView
+            android:id="@+id/humidityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Humidity "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/humidityTextID"
+            app:layout_constraintStart_toEndOf="@+id/pressureTextID" />
+
+        <TextView
+            android:id="@+id/humidityTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="86"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/humidityText"
+            app:layout_constraintStart_toEndOf="@+id/pressureText" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2">
+
+        <TextView
+            android:id="@+id/sunriseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/sunriseTextID"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/sunriseTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="86"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sunsetText" />
+
+        <TextView
+            android:id="@+id/sunsetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sunset "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/sunsetTextID"
+            app:layout_constraintStart_toEndOf="@+id/sunriseTextID" />
+
+        <TextView
+            android:id="@+id/sunsetTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="86"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/sunsetText"
+            app:layout_constraintStart_toEndOf="@+id/sunriseText" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
