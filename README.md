@@ -1,5 +1,4 @@
 # Weather App
-![Weather App](path_to_screenshot)
 
 ## Overview
 
@@ -18,9 +17,12 @@ The Weather App is an Android application designed to provide users with accurat
 
 ## Screenshots
 
-![Home Screen](path_to_home_screenshot)
-![Settings Screen](path_to_settings_screenshot)
-![Forecast Screen](path_to_forecast_screenshot)
+![Home Fragment](https://github.com/user-attachments/assets/510e9272-c1ff-43db-a98d-8c23afab7300)
+![Home](https://github.com/user-attachments/assets/dcb30672-1b51-4a15-b907-4a0270d64af6)
+![Forecast Fragment](https://github.com/user-attachments/assets/957fc484-91f6-4d2b-a8a4-059741912546)
+![settings](https://github.com/user-attachments/assets/2d3c3521-141e-4e25-b56e-e3184444287e)
+![location](https://github.com/user-attachments/assets/cae0c61c-11a8-4ab4-a6b8-f2b4784eee66)
+![permission](https://github.com/user-attachments/assets/837dd7c1-3c5c-4520-8bbd-8f851fd0ebd6)
 
 ## Installation
 
