@@ -16,7 +16,12 @@ The Weather App is an Android application designed to provide users with accurat
 - **API Integration**: Fetches weather data from the OpenWeather API.
 
 ## Screenshots
-
+![Home](https://github.com/user-attachments/assets/470e0bb2-815a-4bad-994b-dd9107266352)
+![Home Fragment](https://github.com/user-attachments/assets/0194e052-d97a-419f-8b3d-95de25617e29)
+![Forecast Fragment](https://github.com/user-attachments/assets/34f0a73e-00f3-4135-bd0e-12101b9ad96c)
+![settings](https://github.com/user-attachments/assets/1504b101-4a08-4699-95b0-50598ec49a8b)
+![Permission](https://github.com/user-attachments/assets/c1c2793a-5de0-4201-b663-8e00d359464d)
+![Location](https://github.com/user-attachments/assets/8830f6f4-4dc2-4b9a-ab97-1cca9b823ee8)
 
 ## Installation
 
